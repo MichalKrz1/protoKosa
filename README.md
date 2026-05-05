@@ -1,0 +1,2 @@
+# protoKosa
+godot game protoKosa
