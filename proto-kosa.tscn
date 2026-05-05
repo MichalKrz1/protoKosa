@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1lwtwuuwdi0u"]
+
+[ext_resource type="Script" uid="uid://dbftgtk2ympnh" path="res://Player.cs" id="1_3ylxe"]
+[ext_resource type="Script" uid="uid://3n4qbv8ycpwg" path="res://Main.cs" id="1_jseah"]
+[ext_resource type="Script" uid="uid://u00aqnsosbwi" path="res://Coin.cs" id="3_15iut"]
+[ext_resource type="Script" uid="uid://d3lnqm5yioilr" path="res://Hud.cs" id="4_naham"]
+
+[node name="Node2D" type="Node2D" groups=["coins"]]
+script = ExtResource("1_jseah")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
+script = ExtResource("1_3ylxe")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_15iut")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("4_naham")
